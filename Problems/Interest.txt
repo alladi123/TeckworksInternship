@@ -1,0 +1,6 @@
+// Find Rate Of Interest
+Start
+step1:Read P,R,T
+step2:s=P*R*T/100
+step3:display  s
+Stop

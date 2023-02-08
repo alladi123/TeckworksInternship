@@ -1,0 +1,13 @@
+//display number which is divisible by 9 between range of 40 to 90.
+start
+step1: i=40 n=90,s=0
+step2: while(i<=n)
+           {
+              if(i%9==0)
+                 {
+                     s=s+i
+                     i=i+1
+                }
+           }   
+step3:display s 
+stop
