@@ -1,0 +1,120 @@
+start
+//ATM  Transaction
+step1: display "welcome to Union Bank Of India"
+step2: display "insert your card here"
+step3: read  debitcard
+ if (debitcard is valid)
+      {
+     step: display "select language"
+                  1.telugu
+                  2.english
+                  3.hindi
+    step:read  language
+    step: display "select account type"
+                   1.Savings
+                   2.Current
+    step: read  account type
+        if(account type==1)
+           {
+           step: display "select banking option for cash withdrawl"
+                        1.Banking
+                        2.Transfer
+                         3.Generate pin
+                         4.services
+           step: read  option 
+                   if(option==1){
+                        step: display "Please select Transaction"
+                        step : read Transaction
+                                1.deposit
+                                2.withdraw
+                                3.Balance Enquiry
+                                4. pin change
+                            if(Transaction==1)
+                             {
+                              step : read amount to deposit
+                                if(amount>0)
+                                {
+                                  step: read pin
+                                        if(pin is valid)
+                                                  {
+                                                 step: display "amount deposited successfully"
+                                                 }
+                                          else{
+                                                step : display "invalid pin"
+                                         } 
+                                 }
+                            else{
+                                 step: display "invalid amount"
+                               }
+                            elseif(Transaction==2) {
+                              step: "Please Enter amount (cash available :Rs 100, 500,2000)"
+                              step: read amount 
+                                      if(amount>0 and amount<=actualbalance) {
+                                           step : read pin 
+                                                if(pin is valid)
+                                                  {
+                                                 step: display "withdrawl amount"
+                                                 }
+                                                  else{
+                                                   step : display "invalid pin"
+                                                   } 
+                                     else{
+                                           step: display "insufficient amount"
+                                     }
+                               }
+                          elseif(Transaction==3){
+                               step : read pin 
+                                 if(pin is valid)
+                                   {
+                                     step: display "account balance"
+                                   }
+                                else{
+                                   step : display "invalid pin"
+                                    }
+                       }
+                       elseif(Transaction==4){
+                              step: display "enter your new pin"
+                               step: read pin
+                               step : display "Re-enter your pin"
+                               step : read pin
+        elseif(option==2){
+                 step: read accountno
+                      if(accountno is valid)
+                          {
+                            step: display "enter amount"
+                            step: read amount , actualbalance
+                                 if(amount>0 and amount >=actualbalance) {
+                                        step: read pin 
+                                          if(pin is valid) {
+                                              step: display  "transfer successfully"
+                                          }
+                                          else{
+                                              step: display "invalid"
+                                            }
+                                  else{
+                                      step: display  "enter valid amount"    
+                                     }
+                      else{    display "accountno is invalid"
+                         }
+                        }
+            elseif(option==3) {
+                        step : display "enter your account number"
+                         step: read accountnumber
+                         step : display "enter your mobile number"
+                                   if(mobile number is valid  and  accountnumber is valid) {
+                                         step: display "enter 4 digit OTP"
+                                          step: display "enter your pin"
+                                           step : read pin
+                                            step: display "Re-enter your pin"
+                                             step:read pin
+                                       }
+                                    else{
+                                         step: display "invalid mobile number"
+                                       }
+                     }
+ step: display "your transaction is being processed Please wait"
+ step: display "your transaction is completed Thank you"
+else{
+     step: display "your card is blocked" 
+   }          
+ stop

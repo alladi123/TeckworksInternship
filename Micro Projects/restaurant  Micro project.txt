@@ -1,0 +1,115 @@
+//Restaurant Management System
+
+step1: display "login and create account"
+step: if(admin login)
+             {
+             step:display "options"
+                  ->Add food item
+                  ->Remove food item
+                   ->order tracks
+             if(option==1)
+               {
+                   step: display "enter the food item name"
+                   step:read item
+                   step :display item
+                 }
+            else if(option==2) 
+                   {
+                     step: display "enter the item to be removed"
+                    if(item is avilable)
+                     {
+                         step: display 
+
+                    
+step2:elseif(userlogin)
+          {
+           step: display "enter email and password"
+            if(email and password is valid)
+              {
+                step: display  "dashboard"
+                          options
+                          ->Home
+                         ->category
+                         ->Food items
+                         ->my account
+                         ->contact us
+                          ->About us
+                      if(option==1)
+                        {
+                          step:display " welcome"
+                           step: display "web page"
+                          }
+                    elseif(option==2)
+                      {
+                            step:display " options"
+                               ->North indian
+                                ->Chinese
+                               ->South indian
+                             if(option==1 or option==2 or option==3)
+                               {
+                                   step:display "select item"
+                                    if(item is available)
+                                      {
+                                          step:display " order now"
+                                           step: display "enter quantity"
+                                           step: read quantity
+                                          if(quantity is valid)
+                                                {
+                                                  step: display "enter  current location"
+                                                   step: read location
+                                                   step:display "payment options"
+                                                         ->online payment
+                                                         ->cash on delivery
+                                                      if(option==1)
+                                                      {
+                                                         step:display "select upi"
+                                                         step: display "proceed"
+                                                           if(payment is successful)
+                                                             {
+                                                               step:display "order placed"
+                                                            }
+                                                         else
+                                                            step:display "try again"
+                                                     }
+                                               elseif(option==2) {
+                                                   step:display "order placed successfully"
+                                               }
+                                  else{
+                                         step: display"enter available quantity"
+                                     }
+                             else
+                                   step: display "item is not available"
+              elseif(option==3){
+                    step: display "dashboard"
+                                         ->your orders
+                                         ->account information
+                                         ->order track
+                                         if(option==1)
+                                            {
+                                                step:display " orders information"
+                                             }
+                                        elseif(option==2)
+                                            {
+                                               step:display "profile details"
+                                             }
+                                        elseif(option==3)
+                                            {
+                                                 step:display "order tracking details"
+                                            }
+
+               elseif(option==4)
+                 {
+                    step:display "contact information like phone number
+                                                                         and mail-> abcrestaurant.com"
+                }
+             elseif(option==5)
+              {
+                 step: display "restaurant information"
+               }
+
+
+
+                                                   
+
+step3:
+
