@@ -1,0 +1,20 @@
+display every digit in words
+start
+step1: read a,b
+step 2:if (a<b) 
+             {
+                 for (i=a;i>=0;i--)
+                  {
+                      b++
+                 }
+             print b
+           }
+          else{
+            for(i=b;i>=0;i--)
+               {
+                 a++
+              }
+           print a
+            }
+ stop
+  

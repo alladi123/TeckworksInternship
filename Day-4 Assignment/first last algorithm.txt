@@ -1,0 +1,15 @@
+display sum of first and last digit
+start 
+step1: read n
+step2:b=n%10
+step3:while n!=0
+          {
+             a=n%10
+             n=n/10
+         }
+step4: print "first number is " a
+step5:print "last number is"b
+step6: s=a+b
+step7: print s
+stop
+             
