@@ -1,0 +1,11 @@
+//number is even or odd
+start
+step1:read n
+step2: if(n%2==0)
+             {
+              print(n "is an even number")
+            }
+           else{
+              print(n " is an odd  number")
+             }
+stop

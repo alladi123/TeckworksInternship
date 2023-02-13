@@ -1,0 +1,24 @@
+//input week number and print week day
+start
+step1: read week_no
+step2:if(week_no==1){
+           print("Monday")
+           }
+         elseif(week_no==2){
+           print("Tuesday")
+          }
+          elseif(week_no==3){
+           print("Wednesday")
+           }
+           elseif(week_no==4){
+           print("Thursday")
+           }
+           elseif(week_no==5){
+           print("Friday")
+          }
+           elseif(week_no==6){
+           print("Saturday")
+           }
+           else{
+             print("Sunday")
+             }

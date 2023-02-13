@@ -1,0 +1,24 @@
+//solve quadratic equation
+step1: read a,b,c
+step2:k=(b*b)-4*a*c
+step3:s=k/2,t=0
+step4:while (s!=t)
+            {
+               t=s
+              s=(k/2+t)/2
+            }
+step3:if (k==0)
+            {
+                r=-b/2*a
+                print ("root is " r)
+              }
+           elseif(s>0){
+               q1=-b+(s)/2*a
+                q2=-b-(s)/2*a
+             print("roots are" q1,q2)
+             }
+         else{
+                print("roots are not equal/no roots")
+              }
+stop
+                 

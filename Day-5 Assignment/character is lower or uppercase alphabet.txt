@@ -1,0 +1,11 @@
+//check character is lowercase or uppercase Alphabet
+start
+step1: read ch
+step2: if((ch>="a" and ch<="z") )
+             {
+               print(ch "is lowercase Alphabet")
+              }
+          else{
+              print(ch "is uppercase Alphabet")
+           }
+stop

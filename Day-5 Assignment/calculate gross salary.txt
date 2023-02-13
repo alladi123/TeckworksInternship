@@ -1,0 +1,19 @@
+//calculate gross salary
+start
+step1:read salary
+step2:if (salary<=10000)
+            {
+               hra=salary*20/100
+               da=salary*80/100
+            }
+           elseif(salary<=20000) {
+               hra=salary*25/100
+                da=salary*90/100
+            }
+          else{
+                hra=salary*30/100
+                da=salary*95/100
+              }
+step3:gross=salary+hra+da
+step4:print(gross)
+stop

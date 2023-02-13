@@ -1,0 +1,18 @@
+//Maximum number between 3 numbers
+start
+step1: read a,b,c
+step2: if(a!=b and b!=c and c!=a){
+             if(a>b and a>c)
+             {
+              print(a)
+              }
+            elseif(b>c and b>a){
+               print(b)
+            }
+            else{ 
+               print(c)
+               }
+        }
+ else{
+      print ("all numbers are equal")
+stop

@@ -1,0 +1,14 @@
+//check whether a number is negative,positive or zero
+start
+step1:read n
+step2: if(n<0)
+           {
+              print("negative")
+           }
+        elseif(n==0){
+           print("zero")
+         }
+      else{
+           print("positive")
+        }
+stop

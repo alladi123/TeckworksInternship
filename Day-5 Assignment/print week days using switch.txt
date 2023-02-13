@@ -1,0 +1,28 @@
+//print week day name using switch case
+start
+step1: read week_no
+step2:switch(week_no)
+           {
+             case 1:
+                     print "Monday"
+              break;
+             case 2:
+                       print "tuesday"
+               break;
+              case 3:
+                           print "Wednesday"
+                break;
+               case 4:
+                           print "Thursday"
+                  break;
+                 case 5:
+                            print "Friday"
+                    break;
+                case 6:
+                            print "Saturday"
+                     break;
+                  default :
+                         print "Sunday"
+               }
+stop
+           

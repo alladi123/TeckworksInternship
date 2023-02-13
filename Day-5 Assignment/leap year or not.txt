@@ -1,0 +1,11 @@
+//check given year is leap year or not
+start
+step1: read year
+step2: if(year%4==0)
+            {
+             print(year "is a leap year")
+           }
+         else{
+             print(year "is not a leap year")
+             }
+stop

@@ -1,0 +1,21 @@
+//print Electricity Bill
+Start
+step1: read units
+step2: if(units<=50)
+             {
+               bill=units*0.50
+              }
+           elseif(units<=150)
+               {
+                bill=25+(units-50)*0.75
+               }
+            elseif(units<=250)
+              {
+                bill=100+(units-150)*1.20
+              }
+          else{
+                 bill=220+(units-250)*1.50
+              }
+step3: total=bill+20%100
+step4:display total
+stop

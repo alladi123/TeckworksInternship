@@ -1,0 +1,11 @@
+//check character is alphabet or not
+start
+step1:read ch
+step2:if((ch>="a" and ch<="z") or (ch>="A" and ch<="Z"))
+            {
+             print(ch " is a Alphabet")
+             }
+          else{
+            print(ch "is not an Alphabet")
+         }
+stop

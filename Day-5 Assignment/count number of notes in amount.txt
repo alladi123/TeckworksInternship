@@ -1,0 +1,12 @@
+//count total number of notes in given amount
+start
+step1: read amount
+step2: a=amount/10,b=amount/20,c=amount/50,d=amount/100,e=amount/200,f=amount/500,g=amount/2000
+step3:print("10 notes are" a) 
+step4:print("20 notes are" b) 
+step5:print("50 notes are" c)
+step6:print("100 notes are" d)
+step7:print("200 notes are" e)   
+step8:print("500 notes are" f) 
+step9:print("2000 notes are" g) 
+stop

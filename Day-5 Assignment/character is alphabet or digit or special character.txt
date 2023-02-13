@@ -1,0 +1,16 @@
+// check character is alphabet or digit or special character
+start
+step1:read ch
+step2: if((ch>="a" and ch<="z") or (ch>="A" and ch<="Z"))
+             {
+               print(ch " is an alphabet")
+              }
+          elseif(ch>="0" and ch<="9")
+            {
+              print(ch "is an digit")
+           }
+         else{
+              print(ch "is an special character")
+            }
+stop
+               
