@@ -1,0 +1,19 @@
+//display even and odd numbers in a given numbers
+start
+step1: read n,i=0,s=0,s1=0
+step2: while(n!=0)
+           {
+              i=n%10
+             if(i%2==0):
+                 {
+                     s=s*10+i
+               }
+             else
+             {
+                  s1=s1*10+i
+             }
+          n=n/10
+       }       
+step3:display s
+step4:display s1
+stop

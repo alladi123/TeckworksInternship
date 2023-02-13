@@ -1,0 +1,14 @@
+start
+step1: read char
+step2: if (char>="a" and char<="z ") or (char>="A"  and char <="Z")
+           {
+               step2.1:display " character is Alphabet"
+            }
+           elseif(char >="0" and char<="9")
+             {
+                step2.2 : display "character is digit"
+             }
+            else{
+               step2.3: display "character is special character"
+             }
+stop

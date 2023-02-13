@@ -1,0 +1,11 @@
+// display reverse of number
+start
+step1: read n,i=0,s=0
+step2: while(n!=0)
+           {
+              i=n%10
+              s=s*10+i
+              n=n/10
+           }   
+step3:display s 
+stop

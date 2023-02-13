@@ -1,0 +1,16 @@
+// display products price along with gst
+Start
+step1 : Read  a  "milk in a", b"tea powder in b","c coffee powder in c",d "sugar in d"
+step2:display  a,b,c,d
+step3: price=a+b+c+d
+step 4: if(price<500)
+                step4.1: t=(price*10)/100
+                    display t
+           else if(price<1000)
+                step 4.2: t=(price*20)/100
+                     display t
+           else
+                step 4.3:  t=(price*30)/100
+                     display  t
+
+Stop
