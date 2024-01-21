@@ -1,9 +1,11 @@
 import java.util.*;
+
+
 class MatrixAddition
   {
-    public static void finalarray(int a1[][],int a2[][],int a3[][],r1,c1)
+    public static void finalarray(int a1[][],int a2[][],int a3[][],int r1, int c1)
     {
-      for(int i=0;i<r1;i++)
+      for(int i=0;i< r1;i++)
       {
         for(int j=0;j<c1;j++)
           {

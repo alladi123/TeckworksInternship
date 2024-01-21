@@ -86,18 +86,18 @@ System.out.println("id:" + e.getId() + "Name:" + e.getEmp_name() + "Age" + e.get
  if(e.getId() == idremove) 
       {
         emplist.remove(e);
-        verify2="found";
-        break;
-      }
+        verify2="found";
+        break;
+ }
     }
-    if (verify2==null)
+ if (verify2==null)
     {
     System.out.println("not found");
     }
 
     Iterator itr = employeeList.iterator();
-    while (it.hasNext()) {
-      System.out.println(itr.next());
+ while (it.hasNext()) {
+ System.out.println(itr.next());
   }
 }
 

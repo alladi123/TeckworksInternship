@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*create a class EvenArray having  add() and testEven() methods to take input and verify whether each array element is even or not, if the element is not an even number generate a custom exception, Test your code for any 4 different cases. Use an array of objects for the test cases. */
 class  invalidnumber extends Exception
   {
@@ -24,8 +26,7 @@ class Array
       }
        
     }
-    void eventest()
-    {
+    void eventest() throws invalidnumber {
       for(int i=0;i<=size-1;i++)
         {
           if(arr[i]%2!=0)
@@ -43,8 +44,10 @@ class Array
        {
          System.out.println(in);
        }
-      
+
+    public void check() {
     }
+  }
 }
   class ArrayExample
   {
